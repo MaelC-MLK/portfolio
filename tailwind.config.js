@@ -13,6 +13,12 @@ module.exports = {
       fontFamily: {
         'inria':['Inria Sans', 'sans-serif'],
       },
+      height: {
+        'custom': '340px', 
+      },
+      width: {
+        'custom': '360px', 
+      },
     },
   },
   plugins: [],
