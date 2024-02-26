@@ -745,10 +745,6 @@ video {
   clear: none;
 }
 
-.m-24 {
-  margin: 6rem;
-}
-
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -761,6 +757,10 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mb-16 {
@@ -801,14 +801,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .box-border {
@@ -934,10 +926,6 @@ video {
   height: 340px;
 }
 
-.h-custom1 {
-  height: 720px;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -976,10 +964,6 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
-}
-
-.w-custom1 {
-  width: 480px;
 }
 
 .w-full {
@@ -1343,6 +1327,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2904,6 +2892,11 @@ video {
     z-index: 10;
   }
 
+  .md\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -2966,6 +2959,14 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2974,16 +2975,20 @@ video {
     align-items: flex-start;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:gap-10 {
     gap: 2.5rem;
   }
 
-  .md\:gap-44 {
-    gap: 11rem;
+  .md\:gap-32 {
+    gap: 8rem;
   }
 
-  .md\:gap-52 {
-    gap: 13rem;
+  .md\:gap-44 {
+    gap: 11rem;
   }
 
   .md\:rounded-full {
@@ -3024,6 +3029,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-32 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3031,9 +3041,22 @@ video {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -3044,6 +3067,13 @@ video {
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mx-60 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 }
 
